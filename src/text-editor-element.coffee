@@ -29,6 +29,9 @@ class TextEditorElement extends HTMLElement
     @classList.add('editor')
     @setAttribute('tabindex', -1)
 
+    @setAttribute('role', 'textbox')
+    @setAttribute('aria-multiline', true)
+
     if atom.config.get('editor.useShadowDOM')
       @useShadowDOM = true
 

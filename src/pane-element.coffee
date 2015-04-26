@@ -28,6 +28,7 @@ class PaneElement extends HTMLElement
     @setAttribute 'tabindex', -1
     @appendChild @itemViews = document.createElement('div')
     @itemViews.setAttribute 'class', 'item-views'
+    @itemViews.setAttribute 'role', 'main'
 
   subscribeToDOMEvents: ->
     handleFocus = (event) =>

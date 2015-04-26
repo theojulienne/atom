@@ -17,6 +17,9 @@ class GutterContainerComponent
     @domNode.classList.add('gutter-container')
     @domNode.style.display = 'flex';
 
+    # disable the gutter for accessibility purposes since it just gets in the way right now
+    @domNode.setAttribute('aria-hidden', true)
+
   getDomNode: ->
     @domNode
 
